@@ -1,42 +1,51 @@
 .card {
-    background-color: #101010d1;
-    color: #f0f2f5;
-    border: 20px solid rgba(16, 16, 16, 0.63);
-    box-shadow: inset 0 0 0 2px #ffffff;
+    background-color: #2c3e2f; /* deep forest green */
+    color: #f3e9dc; /* warm beige */
+    border: 20px solid #253729; /* darker green */
+    box-shadow: inset 0 0 0 2px #d2691e; /* burnt orange glow */
     box-sizing: border-box;
-}
-
-.list-group a {
+    border-radius: 8px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .list-group a {
+    display: block;
     margin-top: 1rem;
-    border-left: 5px dotted;
-    color: white;
-}
-
-.list-group a:not(:last-of-type) li {
-    border-bottom: none !important;
-}
-
-.list-group a:hover {
+    border-left: 5px dotted #d2691e; /* burnt orange dotted border */
+    color: #f3e9dc;
+    transition: border-left 0.3s ease, margin-left 0.3s ease;
     text-decoration: none;
-    border-left-style: solid;
-    border-left-width: 3px;
-}
-
-.list-group a:hover li {
-    margin-left: 2px;
-}
-
-.list-group-item {
+  }
+  
+  .list-group a:not(:last-of-type) li {
+    border-bottom: none !important;
+  }
+  
+  .list-group a:hover {
+    border-left: 3px solid #d2691e; /* burnt orange solid border */
+    text-decoration: none;
+  }
+  
+  .list-group a:hover li {
+    margin-left: 4px;
+  }
+  
+  .list-group-item {
     background-color: transparent;
-    font-weight: bold;
-}
-
-.list-group-item:hover {
+    font-weight: 600;
+    padding: 0.75rem 1.25rem;
+    border: none;
+    transition: color 0.3s ease;
+  }
+  
+  .list-group-item:hover {
     cursor: pointer;
-}
-
-.inner-border {
-    border: 20px solid #101010d1;
-    box-shadow: inset 0 0 0 10px #ffffff;
+    color: #a0522d; /* sienna highlight on hover */
+  }
+  
+  .inner-border {
+    border: 20px solid #2c3e2f;
+    box-shadow: inset 0 0 0 10px #d2691e;
     box-sizing: border-box;
-}
+    border-radius: 8px;
+  }
